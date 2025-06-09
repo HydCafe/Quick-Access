@@ -98,3 +98,59 @@ footer {
   font-size: 14px;
   color: #666;
 }
+
+.image-qrcode {
+  position: center;
+  max-width: 200px;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.image-carousel {
+  position: relative;
+  max-width: 400px;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-container {
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.carousel-track img {
+  width: 400px;
+  height: 600px;
+  object-fit: cover;
+  flex-shrink: 0;
+  border-radius: 12px;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255,255,255,0.7);
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
+}
