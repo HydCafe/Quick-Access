@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chefs - Hyderabad Cafe Waterloo</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://apis.google.com/js/api.js"></script>
+</head>
+<body>
+  <header>
+      <a href="index.html"><img src="images/logo.png" alt="Hyderabad Cafe Logo"/></a>
+    <h1>Hyderabad Cafe Waterloo</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="chefs.html">Chefs</a>
+    <a href="kot.html">KOT</a>
+    <a href="storefront.html">Store Front</a>
+    <a href="admins.html">Admins</a>
+  </nav>
+
+  <main>
+    <section class="button-container">
+      <button onclick="window.open('https://docs.google.com/forms/d/1v9FP7J1Ly5t_HaLvLXdNKdTZeKKfr9OAWmEuPkXLQR8', '_blank')">To-Do List</button>
+      <button onclick="window.open('https://docs.google.com/forms/d/1mQNRJnIxLLdlWDP1rmBlgNFEmybz1MFYxQk9RUAONMg', '_blank')">Interac Cash Update</button>
+      <button onclick="window.open('https://docs.google.com/forms/d/11c9CwVal7QI1I6RfJeSRO-Ys3kEqUd6fGv48jW34ItE', '_blank')">Book Catering</button>
+      <button onclick="window.open('https://docs.google.com/forms/d/1IKEokcTddfBueBihhuICqKIvpDEsMNFcyFTZ6bkBQAM', '_blank')">Closing Tasks</button>    
+      <button onclick="window.open('https://docs.google.com/forms/d/1Usg_GQdrsvzQ2L1WL-nS2lEMRBUpOB5GXBRZR7P5fXY', '_blank')">Opening Tasks</button>    
+    </section>
+      
+    <section>
+      <h2>Food Menu</h2>
+      <div class="menu-section">
+        <details>
+          <summary>Appetizers</summary>
+          <details>
+            <summary>Veg</summary>
+            <ul>
+              <li>Veg Samosa</li>
+              <li>Paneer 65</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Non-Veg</summary>
+            <ul>
+              <li>Chicken 65</li>
+              <li>Fish Fry</li>
+            </ul>
+          </details>
+        </details>
+
+        <details>
+          <summary>Main Course</summary>
+          <details>
+            <summary>Veg</summary>
+            <ul>
+              <li>Veg Biryani</li>
+              <li>Paneer Butter Masala</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Non-Veg</summary>
+            <ul>
+              <li>Chicken Biryani</li>
+              <li>Mutton Curry</li>
+            </ul>
+          </details>
+        </details>
+      </div>
+    </section>
+      
+    <!--<section>
+      <h2>New Items PDF</h2>
+      <div id="pdf-container">
+        <iframe title = "newItems" id="pdf-frame" width="100%" height="600px" style="border: none;"></iframe>
+      </div>
+    </section>-->
+  </main>
+
+  <footer>
+    © 2025 Hyderabad Cafe Waterloo. All Rights Reserved.
+  </footer>
+    <script>
+
+    function loadPDFLink() {
+      const pdfUrl = `https://docs.google.com/document/d/1V6uDw42rmtSxAMlTqJzryHPHwTYpeL-YKwrGajrQYLw/preview`;
+      document.getElementById('pdf-frame').src = pdfUrl;
+    }
+
+    window.onload = () => {
+      loadPDFLink();
+    };
+  </script>
+</body>
+</html>
